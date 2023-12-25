@@ -1,0 +1,4 @@
+INDEX VERSION 1.132+C:\Users\SAMSUNG\Desktop\dataStructure\.metadata\.plugins\org.eclipse.jdt.core
+3672071168.index
+2113960469.index
+1865797976.index
