@@ -1,0 +1,26 @@
+package ch02;
+
+public class practice_2_7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 1000이하의 소수 출력하기
+		
+		int num = 1000;
+		for(int n = 2; n<=num;n++) {
+			int i;
+			for(i = 2;i<n ;i++) {
+				if(n%i==0) {
+					break;
+				}
+			}
+			if(n==i) {
+				System.out.println(n);
+			}
+		}
+		
+		
+		
+	}
+
+}

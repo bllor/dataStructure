@@ -1,0 +1,46 @@
+package ch02;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class practice_2_5 {
+
+	class MaxOfArrayRand{
+		//배열 a의 최대값을 구하여 반환한다.
+		
+		static int maxOf(int[] a) {
+			int max = 0;
+			for(int i =0; i<a.length;i++) {
+				if(a[i]>max) {
+					//a의 i번째 배열의 값이 max보다 클 경우,
+					//max를 i로 선언
+					max=a[i];
+				}
+			}
+			return max;
+		}
+	}
+	
+	public static void main(String[] args) {
+		//12.26 
+		//난수 사용해 배열의 요소값 설정하기
+		Random random = new Random();
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("배열의 크기 :");
+		int num = scan.nextInt();
+		
+		int[] arr = new int[num];
+		
+		System.out.println("배열에 들어갈 값은 다음과 같습니다."); 
+		for(int i = 0; i<arr.length;i++) {
+			arr[i]=random.nextInt(100);
+			//random.nextInt(100)을 함으로써 1~100까지 범위가 선정되었다.
+			System.out.println("arr["+i+"] : "+arr[i]);
+		}
+		int answer = MaxOfArrayRand.maxOf(arr);
+		//위에 선언된 MaxOfArrayRand 클래스의 maxOf메서드를 이용하여 가장 큰 수를 answer에 저장한다.
+		System.out.println("배열 중 가장 큰 값은 "+answer+" 입니다.");
+		
+	}
+}

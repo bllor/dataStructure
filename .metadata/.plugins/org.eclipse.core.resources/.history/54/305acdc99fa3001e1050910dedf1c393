@@ -1,0 +1,15 @@
+package ch02;
+
+public class practice_2_7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// 100이하의 소수 출력하기
+		
+		int num = 10;
+		
+		System.out.println(num/2);
+		
+	}
+
+}
