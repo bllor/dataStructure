@@ -30,7 +30,7 @@ public class practice_3_9 {
 		
 		System.out.println(str.getXyz());
 		System.out.println(i.getXyz());
-		
+		System.out.println(10%9);
 		/*
 		 * str과 i의 타입이 다르지만 같은 클래스를 사용할 수 있고, 같은 매서드를 사용해서 다른 값을 출력할 수 있다.
 		 */
